@@ -1,0 +1,53 @@
+.Eintrag {
+  font-size: 20px;
+}
+
+.Erledigt {
+  text-decoration: line-through;
+}
+
+.Zu {
+  position: relative;
+}
+
+.Arrow {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  border: 12px solid transparent;
+  border-right: 12px solid rgb(150, 150, 150);
+}
+
+.Bottom {
+  top: 5px;
+  margin-left: 5px;
+  border: 13px solid transparent;
+  border-top: 13px solid rgb(150, 150, 150);
+}
+
+.Block {
+  display: none;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  /*visibility: hidden; */
+  /*display: none;*/
+}
+
+.Visible {
+  display: block;
+}
+
+.ButtonAvailable {
+  background-color: lightgreen;
+  border-radius: 5px;
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.not {
+  background-color: lightblue;
+  border-radius: 5px;
+  display: inline-block;
+  margin-left: 40px;
+}
