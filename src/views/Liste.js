@@ -42,7 +42,8 @@ class Liste extends Component {
           erledigt: true,
           show: true
         }
-      ]
+      ],
+      neuerEintrag: ""
     };
   }
 
@@ -74,12 +75,27 @@ class Liste extends Component {
     console.log("Hallo - Ich werde jetzt ungemounted");
   }
 
+  handleChange = event => {
+    this.setState({ neuerEintrag: event.target.value });
+  };
+
+  handlerSubmit = event => {
+    event.preventDefault();
+    const eintrag = {
+      titel: this.state.neuerEintrag,
+      erledigt: false,
+      id: this.state.liste.length + 1
+    };
+    this.setState({ liste: [...this.state.liste, eintrag], neuerEintrag: "" });
+  };
+
   render() {
     return (
       <div>
         <h2>Vorräte:</h2>
 
         <Rechnung number={this.state.liste} />
+
         <ol>
           {this.state.liste.map(daten => (
             <Eintrag
@@ -92,6 +108,18 @@ class Liste extends Component {
             />
           ))}
         </ol>
+
+        <form onSubmit={this.handlerSubmit}>
+          <label>
+            Neuer Eintrag:{" "}
+            <input
+              type="text"
+              value={this.state.neuerEintrag}
+              onChange={this.handleChange}
+            />
+          </label>
+          <input type="submit" value="Hinzufügen" />
+        </form>
       </div>
     );
   }
