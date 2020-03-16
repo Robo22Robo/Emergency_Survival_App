@@ -11,6 +11,8 @@ class Liste extends Component {
           id: 1,
           titel: "Wasser",
           description: "description1",
+          picture:
+            "https://www.outletdeluxe-24.de/project/img/bottles-60475_640.jpg",
           erledigt: true,
           show: false
         },
@@ -18,6 +20,8 @@ class Liste extends Component {
           id: 2,
           titel: "Lebensmittel",
           description: "description2",
+          picture:
+            "https://www.outletdeluxe-24.de/project/img/spaghetti-4929957_640.jpg",
           erledigt: false,
           show: false
         },
@@ -25,6 +29,8 @@ class Liste extends Component {
           id: 3,
           titel: "Toilettenpapier",
           description: "description3",
+          picture:
+            "https://www.outletdeluxe-24.de/project/img/toilet-paper-3964492_640.jpg",
           erledigt: true,
           show: false
         },
@@ -32,6 +38,8 @@ class Liste extends Component {
           id: 4,
           titel: "Zeitvertreib in Quarantäne-Situation",
           description: "description4",
+          picture:
+            "https://www.outletdeluxe-24.de/project/img/books-1149959_640.jpg",
           erledigt: true,
           show: false
         },
@@ -39,6 +47,7 @@ class Liste extends Component {
           id: 5,
           titel: "ggf. Vorsorge Blackout-Szenario",
           description: "description5",
+          picture: "https://www.outletdeluxe-24.de/project/img/kuchenka.jpg",
           erledigt: true,
           show: false
         }
