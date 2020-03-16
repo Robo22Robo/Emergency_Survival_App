@@ -19,28 +19,28 @@ class Liste extends Component {
           titel: "Lebensmittel",
           description: "description2",
           erledigt: false,
-          show: true
+          show: false
         },
         {
           id: 3,
           titel: "Toilettenpapier",
           description: "description3",
           erledigt: true,
-          show: true
+          show: false
         },
         {
           id: 4,
           titel: "Zeitvertreib in Quarantäne-Situation",
           description: "description4",
           erledigt: true,
-          show: true
+          show: false
         },
         {
           id: 5,
           titel: "ggf. Vorsorge Blackout-Szenario",
           description: "description5",
           erledigt: true,
-          show: true
+          show: false
         }
       ],
       neuerEintrag: ""
