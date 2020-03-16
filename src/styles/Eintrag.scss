@@ -13,16 +13,20 @@
 .Arrow {
   display: inline-block;
   position: absolute;
-  top: 0px;
+  top: 5px;
+  margin-left: -7px;
   border: 12px solid transparent;
   border-right: 12px solid rgb(150, 150, 150);
 }
 
 .Bottom {
-  top: 5px;
-  margin-left: 5px;
-  border: 13px solid transparent;
-  border-top: 13px solid rgb(150, 150, 150);
+  top: 11px;
+  margin-left: 1px;
+  border: 12px solid transparent;
+  border-top: 12px solid rgb(150, 150, 150);
+}
+.hide {
+  display: none;
 }
 
 .Block {
@@ -42,12 +46,14 @@
   background-color: lightgreen;
   border-radius: 5px;
   display: inline-block;
-  margin-left: 40px;
+  margin-left: 32px;
+  margin-bottom: 4px;
 }
 
 .not {
   background-color: lightblue;
   border-radius: 5px;
   display: inline-block;
-  margin-left: 40px;
+  margin-left: 32px;
+  margin-bottom: 4px;
 }

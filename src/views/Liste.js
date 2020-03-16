@@ -84,6 +84,7 @@ class Liste extends Component {
     const eintrag = {
       titel: this.state.neuerEintrag,
       erledigt: false,
+      hide: true,
       id: this.state.liste.length + 1
     };
     this.setState({ liste: [...this.state.liste, eintrag], neuerEintrag: "" });

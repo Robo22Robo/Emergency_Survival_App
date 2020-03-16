@@ -7,7 +7,7 @@ const Eintrag = ({ todo, eintragClickHandler, eintragClickHandlerShow }) => (
       <span onClick={eintragClickHandler}>{todo.titel} </span>
 
       <div
-        className={todo.show ? "Arrow Bottom" : "Arrow"}
+        className={todo.show ? "Arrow Bottom" : todo.hide ? "hide" : "Arrow"}
         onClick={eintragClickHandlerShow}
       ></div>
 
