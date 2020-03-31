@@ -1,3 +1,3 @@
 # Emergency_Survival_App
-View:
+view:
 https://emergency-survival-app-project.herokuapp.com/

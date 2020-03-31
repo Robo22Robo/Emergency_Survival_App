@@ -1,0 +1,24 @@
+.Navigation-Bar li {
+  float: left;
+  display: block;
+  padding: 14px 16px;
+}
+
+a {
+  color: turquoise;
+  text-decoration: none;
+}
+
+/*
+a:visited {
+  color: turquoise;
+}
+*/
+
+a:hover {
+  color: orange !important;
+}
+
+.active {
+  color: red !important;
+}

@@ -1,0 +1,138 @@
+body {
+    font-family: 'Muli', sans-serif;
+} 
+p {
+    color: rgb(117, 117, 117);
+}
+
+/**
+ * Header - Bereich
+ */
+.header {
+    height: 620px;
+    background-image: url("../img/header-background-edited.jpg");
+    background-size: cover;
+    background-position: 50% 62%;
+}
+
+.header-navbar-links {
+    color: white;
+    float: right;
+    margin-top: 50px;
+}
+
+.header-navbar-links li {
+    float: left;
+    list-style-type: none;
+    margin-left: 26px;
+    text-shadow: 0px 0px 2px black;
+}
+.header-brand-wrapper {
+    margin-top: 50px;
+    float: left;
+}
+.header-brand {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 150%;
+    display: block;
+    margin-top: -9%;
+    text-shadow: 0px 0px 2px black;
+}
+.slogan {
+    padding-top: 120px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: 0px 0px 2px black;
+}
+.slogan-top {
+    font-size: 170%;
+    font-weight: lighter;
+} 
+.slogan-bottom {
+    font-size: 250%;
+    font-weight: bold;
+}
+.solgan-button {
+    margin-top: 50px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 2px black;
+}
+.solgan-button:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 2px black;
+}
+
+
+/**
+ * Service-Bereich
+ */
+.service {
+    padding-top: 100px;
+    padding-bottom: 85px;
+}
+.service-gray {
+    background-color: rgb(245, 245, 245);
+}
+.service-title {
+    font-weight: lighter;
+    color: rgb(30, 30, 30);
+}
+.service-icon {
+    color: rgb(224, 224, 224);
+    font-size: 1250%;
+    text-align: center;
+    margin-top: -10%;
+    margin-bottom: -20%;
+}
+
+/**
+ * Features - Bereich
+ */
+.features {
+    padding-top: 100px;
+    padding-bottom: 85px;
+}
+
+.feature-icon {
+    width: 70px;
+    height: 60px;
+    padding-top: 10px;
+    background-color: rgb(30, 30, 30);
+    border-radius: 35px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 30px;
+    float: left;
+}
+.feature-text {
+    margin-left: 90px;
+}
+.feature-text h5 {
+    margin-bottom: 8px;
+    font-size: 150%;
+    color: rgb(30, 30, 30);
+}
+
+/**
+ * Clients...
+ */
+.clients {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: rgb(245, 245, 245);
+}
+.clients-heading {
+    font-weight: lighter;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.clients-subheading {
+    text-align: center;
+}
+.client-image {
+    width: 100%;
+    border-radius: 10000px;
+    border: 5px solid rgb(255, 255, 255);
+}

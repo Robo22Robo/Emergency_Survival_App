@@ -1,0 +1,80 @@
+.Eintrag {
+  font-size: 20px;
+}
+
+.Erledigt {
+  text-decoration: line-through;
+}
+
+.Zu {
+  position: relative;
+}
+
+.Arrow {
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  margin-left: -7px;
+  border: 12px solid transparent;
+  border-right: 12px solid rgb(150, 150, 150);
+}
+
+.Bottom {
+  top: 11px;
+  margin-left: 1px;
+  border: 12px solid transparent;
+  border-top: 12px solid rgb(150, 150, 150);
+}
+.hide {
+  display: none;
+}
+
+.Block {
+  display: none;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  text-align: left;
+  /*visibility: hidden; */
+  /*display: none;*/
+}
+
+.Visible {
+  display: block;
+}
+
+.ButtonAvailable {
+  background-color: lightgreen;
+  border-radius: 5px;
+  display: inline-block;
+  margin-left: 32px;
+  margin-bottom: 4px;
+}
+
+.not {
+  background-color: lightblue;
+  border-radius: 5px;
+  display: inline-block;
+  margin-left: 32px;
+  margin-bottom: 4px;
+}
+.descriptionPicture {
+  width: 100%;
+  border-radius: 10000px;
+  border: 5px solid rgb(255, 255, 255);
+}
+
+.supplies-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(245, 245, 245);
+  color: black;
+
+  width: 80%;
+  max-width: 960px;
+  position: relative;
+}
+
+.supplies-heading {
+  margin-bottom: 0px;
+}
