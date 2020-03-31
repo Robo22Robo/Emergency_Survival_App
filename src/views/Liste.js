@@ -101,35 +101,37 @@ class Liste extends Component {
 
   render() {
     return (
-      <div>
-        <h2>Vorräte:</h2>
+      <div className="supplies-container">
+        <div className="container">
+          <h2 className="supplies-heading">Deine Vorräte:</h2>
+          <p>Hast du die Vorräte vorbereitet?:</p>
+          <Rechnung number={this.state.liste} />
 
-        <Rechnung number={this.state.liste} />
+          <ol>
+            {this.state.liste.map(daten => (
+              <Eintrag
+                key={daten.id}
+                todo={daten}
+                eintragClickHandler={() => this.eintragClickHandler(daten)}
+                eintragClickHandlerShow={() =>
+                  this.eintragClickHandlerShow(daten)
+                }
+              />
+            ))}
+          </ol>
 
-        <ol>
-          {this.state.liste.map(daten => (
-            <Eintrag
-              key={daten.id}
-              todo={daten}
-              eintragClickHandler={() => this.eintragClickHandler(daten)}
-              eintragClickHandlerShow={() =>
-                this.eintragClickHandlerShow(daten)
-              }
-            />
-          ))}
-        </ol>
-
-        <form onSubmit={this.handlerSubmit}>
-          <label>
-            Neuer Eintrag:{" "}
-            <input
-              type="text"
-              value={this.state.neuerEintrag}
-              onChange={this.handleChange}
-            />
-          </label>
-          <input type="submit" value="Hinzufügen" />
-        </form>
+          <form onSubmit={this.handlerSubmit}>
+            <label>
+              Neuer Eintrag:{" "}
+              <input
+                type="text"
+                value={this.state.neuerEintrag}
+                onChange={this.handleChange}
+              />
+            </label>
+            <input type="submit" value="Hinzufügen" />
+          </form>
+        </div>
       </div>
     );
   }

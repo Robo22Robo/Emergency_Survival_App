@@ -34,6 +34,11 @@ function App() {
                 </NavLink>
               </li>
               <li>
+                <NavLink activeClassName="active" to="/liste">
+                  Vorräte
+                </NavLink>
+              </li>
+              <li>
                 <NavLink activeClassName="active" to="/about">
                   About
                 </NavLink>
@@ -43,6 +48,7 @@ function App() {
                   Credit
                 </NavLink>
               </li>
+
               <li>
                 <NavLink activeClassName="active" to="/this-does-not-exist">
                   Nope
@@ -56,13 +62,11 @@ function App() {
             </Route>
             <Route path="/about" component={About} />
             <Route path="/credit" component={Credit} />
+            <Route path="/liste" component={Liste} />
             <Route path="*" render={() => <div>404 - Not found</div>} />
           </Switch>
         </Router>
       </header>
-      <div className="container">
-        <Liste />
-      </div>
     </div>
   );
 }

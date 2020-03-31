@@ -20,8 +20,17 @@ const Eintrag = ({ todo, eintragClickHandler, eintragClickHandlerShow }) => (
     </div>
 
     <div className={todo.show ? "Block Visible" : "Block"}>
-      <img src={todo.picture} className="descriptionPicture" />
-      {todo.description}
+      <div className="row">
+        <div className="col-3">
+          <img
+            src={todo.picture}
+            alt={todo.titel}
+            className="descriptionPicture"
+          />
+        </div>
+
+        <div className="col-9 todoDescription">{todo.description}</div>
+      </div>
     </div>
   </li>
 );
