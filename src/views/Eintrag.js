@@ -29,7 +29,11 @@ const Eintrag = ({ todo, eintragClickHandler, eintragClickHandlerShow }) => (
           />
         </div>
 
-        <div className="col-8 todoDescription">{todo.description}</div>
+        <div className="col-8 todoDescription">
+          {todo.description}
+          <div class="todoDescriptionArrow-border"></div>
+          <div class="todoDescriptionArrow"></div>
+        </div>
       </div>
     </div>
   </li>
