@@ -92,21 +92,27 @@
   font-weight: lighter;
   position: relative;
 }
-.todoDescriptionArrow-border {
+
+.todoDescription::before,
+.todoDescription::after {
+  content: "";
+  display: block;
   width: 0px;
   height: 0px;
   position: absolute;
   top: 50%;
+}
+
+.todoDescription::before {
   left: -30px;
   margin-top: -15px;
   border: 15px solid transparent;
   border-right: 15px solid rgb(235, 235, 235);
 }
 
-.todoDescriptionArrow {
-  width: 0px;
-  height: 0px;
-  position: absolute;
+.todoDescription::after {
+  content: "";
+
   top: 50%;
   left: -26px;
   margin-top: -13px;
