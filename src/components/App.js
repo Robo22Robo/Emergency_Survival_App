@@ -11,8 +11,8 @@ import {
 /* Components */
 
 import Liste from "../views/Liste";
-import Home from "../views/Home";
-import About from "../views/About";
+import Tipps from "../views/Tipps";
+import Karte from "../views/Karte";
 import Credit from "../views/Credit";
 
 import "../styles/App.scss";
@@ -30,7 +30,7 @@ function App() {
             <ul className="Navigation-Bar">
               <li>
                 <NavLink exact activeClassName="active" to="/">
-                  Home
+                  Survival-Tipps
                 </NavLink>
               </li>
               <li>
@@ -39,8 +39,8 @@ function App() {
                 </NavLink>
               </li>
               <li>
-                <NavLink activeClassName="active" to="/about">
-                  About
+                <NavLink activeClassName="active" to="/karte">
+                  Corona Karte
                 </NavLink>
               </li>
               <li>
@@ -48,19 +48,13 @@ function App() {
                   Credit
                 </NavLink>
               </li>
-
-              <li>
-                <NavLink activeClassName="active" to="/this-does-not-exist">
-                  Nope
-                </NavLink>
-              </li>
             </ul>
           </div>
           <Switch>
             <Route exact path="/">
-              <Home />
+              <Tipps />
             </Route>
-            <Route path="/about" component={About} />
+            <Route path="/karte" component={Karte} />
             <Route path="/credit" component={Credit} />
             <Route path="/liste" component={Liste} />
             <Route path="*" render={() => <div>404 - Not found</div>} />
