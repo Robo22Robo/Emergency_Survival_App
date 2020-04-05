@@ -5,13 +5,14 @@ import {
   BrowserRouter as Router,
   Route,
   Switch,
-  NavLink
+  NavLink,
 } from "react-router-dom";
 
 /* Components */
 
 import Liste from "../views/Liste";
 import Tipps from "../views/Tipps";
+import Infizierte from "../views/Infizierte";
 import Karte from "../views/Karte";
 import Credit from "../views/Credit";
 
@@ -39,6 +40,11 @@ function App() {
                 </NavLink>
               </li>
               <li>
+                <NavLink activeClassName="active" to="/infizierte">
+                  Infizierte
+                </NavLink>
+              </li>
+              <li>
                 <NavLink activeClassName="active" to="/karte">
                   Corona Karte
                 </NavLink>
@@ -54,6 +60,7 @@ function App() {
             <Route exact path="/">
               <Tipps />
             </Route>
+            <Route path="/infizierte" component={Infizierte} />
             <Route path="/karte" component={Karte} />
             <Route path="/credit" component={Credit} />
             <Route path="/liste" component={Liste} />
