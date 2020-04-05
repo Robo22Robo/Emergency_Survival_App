@@ -26,16 +26,56 @@ export default class Infizierte extends React.Component {
               <table className="Infected-Table">
                 <tr>
                   <th>Land</th>
-                  <th>total_active_cases</th>
-                  <th>total_cases</th>
+                  <th>
+                    total
+                    <br />
+                    active
+                    <br />
+                    cases
+                  </th>
+                  <th>
+                    total
+                    <br />
+                    cases
+                  </th>
 
-                  <th>total_recovered</th>
-                  <th>total_unresolved</th>
-                  <th>total_deaths</th>
-                  <th>total_new_cases_today</th>
-                  <th>total_new_deaths_today</th>
+                  <th>
+                    total
+                    <br />
+                    recovered
+                  </th>
+                  <th>
+                    total
+                    <br />
+                    unresolved
+                  </th>
+                  <th>
+                    total
+                    <br />
+                    deaths
+                  </th>
+                  <th>
+                    total new
+                    <br />
+                    cases
+                    <br />
+                    today
+                  </th>
+                  <th>
+                    total new
+                    <br />
+                    deaths
+                    <br />
+                    today
+                  </th>
 
-                  <th>total_serious_cases</th>
+                  <th>
+                    total
+                    <br />
+                    serious
+                    <br />
+                    cases
+                  </th>
                 </tr>
                 <tr>
                   <td>{this.state.land[1].title}</td>
