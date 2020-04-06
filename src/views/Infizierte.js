@@ -78,70 +78,22 @@ export default class Infizierte extends React.Component {
                   </th>
                 </tr>
                 <tr>
-                  <td>{this.state.land[1].title}</td>
-                  <td>{this.state.land[1].total_active_cases}</td>
-                  <td>{this.state.land[1].total_cases}</td>
-                  <td>{this.state.land[1].total_recovered}</td>
-                  <td>{this.state.land[1].total_unresolved}</td>
-                  <td>{this.state.land[1].total_deaths}</td>
-                  <td>{this.state.land[1].total_new_cases_today}</td>
-                  <td>{this.state.land[1].total_new_deaths_today}</td>
-                  <td>{this.state.land[1].total_serious_cases}</td>
-                </tr>
-                <tr>
-                  <td>{this.state.land[1].title}</td>
-                  <td>{this.state.land[1].total_active_cases}</td>
-                  <td>{this.state.land[1].total_cases}</td>
-                  <td>{this.state.land[1].total_recovered}</td>
-                  <td>{this.state.land[1].total_unresolved}</td>
-                  <td>{this.state.land[1].total_deaths}</td>
-                  <td>{this.state.land[1].total_new_cases_today}</td>
-                  <td>{this.state.land[1].total_new_deaths_today}</td>
-                  <td>{this.state.land[1].total_serious_cases}</td>
-                </tr>
-                <tr>
-                  <td>{this.state.land[1].title}</td>
-                  <td>{this.state.land[1].total_active_cases}</td>
-                  <td>{this.state.land[1].total_cases}</td>
-                  <td>{this.state.land[1].total_recovered}</td>
-                  <td>{this.state.land[1].total_unresolved}</td>
-                  <td>{this.state.land[1].total_deaths}</td>
-                  <td>{this.state.land[1].total_new_cases_today}</td>
-                  <td>{this.state.land[1].total_new_deaths_today}</td>
-                  <td>{this.state.land[1].total_serious_cases}</td>
-                </tr>
-                <tr>
-                  <td>{this.state.land[1].title}</td>
-                  <td>{this.state.land[1].total_active_cases}</td>
-                  <td>{this.state.land[1].total_cases}</td>
-                  <td>{this.state.land[1].total_recovered}</td>
-                  <td>{this.state.land[1].total_unresolved}</td>
-                  <td>{this.state.land[1].total_deaths}</td>
-                  <td>{this.state.land[1].total_new_cases_today}</td>
-                  <td>{this.state.land[1].total_new_deaths_today}</td>
-                  <td>{this.state.land[1].total_serious_cases}</td>
-                </tr>
-                <tr>
-                  <td>{this.state.land[1].title}</td>
-                  <td>{this.state.land[1].total_active_cases}</td>
-                  <td>{this.state.land[1].total_cases}</td>
-                  <td>{this.state.land[1].total_recovered}</td>
-                  <td>{this.state.land[1].total_unresolved}</td>
-                  <td>{this.state.land[1].total_deaths}</td>
-                  <td>{this.state.land[1].total_new_cases_today}</td>
-                  <td>{this.state.land[1].total_new_deaths_today}</td>
-                  <td>{this.state.land[1].total_serious_cases}</td>
-                </tr>
-                <tr>
-                  <td>{this.state.land[1].title}</td>
-                  <td>{this.state.land[1].total_active_cases}</td>
-                  <td>{this.state.land[1].total_cases}</td>
-                  <td>{this.state.land[1].total_recovered}</td>
-                  <td>{this.state.land[1].total_unresolved}</td>
-                  <td>{this.state.land[1].total_deaths}</td>
-                  <td>{this.state.land[1].total_new_cases_today}</td>
-                  <td>{this.state.land[1].total_new_deaths_today}</td>
-                  <td>{this.state.land[1].total_serious_cases}</td>
+                  {this.state.loading &&
+                    this.state.land.map((country) => {
+                      return (
+                        <>
+                          <td>{country.title}</td>
+                          <td>{country.total_active_cases}</td>
+                          <td>{country.total_cases}</td>
+                          <td>{country.total_recovered}</td>
+                          <td>{country.total_unresolved}</td>
+                          <td>{country.total_deaths}</td>
+                          <td>{country.total_new_cases_today}</td>
+                          <td>{country.total_new_deaths_today}</td>
+                          <td>{country.total_serious_cases}</td>
+                        </>
+                      );
+                    })}
                 </tr>
               </table>
             </div>
