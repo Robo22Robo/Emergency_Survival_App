@@ -8,9 +8,9 @@ import {
   Sphere,
   Graticule,
 } from "react-simple-maps";
-
+import AllCountries from "./AllCountries";
 import mapValues from "lodash.mapvalues";
-
+import WorldStat from "./WorldStat";
 const geoUrl =
   "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
 const colorScale = (cases) => {
@@ -43,11 +43,11 @@ const wrapperStyles = {
 const MapChart = () => {
   const proxy = "https://cors-anywhere.herokuapp.com/";
   const [state, setState] = useState({});
-
+  const [allCountriesData, setallCountriesData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const totalCases = (countryCode) => {
     const arr = [];
-
+    mapValues(...allCountriesData, (v) => arr.push(v));
     const cur = arr.filter((v) => v.code === countryCode);
     return cur.length > 0 ? cur[0].total_cases : 0;
   };
@@ -56,7 +56,7 @@ const MapChart = () => {
       .then((res) => res.json())
       .then((data) => {
         console.log("success");
-
+        setallCountriesData(data.countryitems);
         console.log(data.countryitems);
         setState(data.countryitems);
         setIsLoading(false);
@@ -70,7 +70,7 @@ const MapChart = () => {
   }, [isLoading]);
   const clickedCountry = (name) => {
     const arr = [];
-
+    mapValues(...allCountriesData, (v) => arr.push(v));
     const cur = arr.filter((v) => v.code === name);
     setState(...cur);
     console.log(cur[0].title);
@@ -122,6 +122,7 @@ const MapChart = () => {
     </div>
   ) : (
     <div className="row" style={{ padding: "0px", margin: "0px" }}>
+      <WorldStat />
       <div className="col s12 m9" style={{ padding: "0px" }}>
         <div style={wrapperStyles}>
           <ComposableMap projectionConfig={{ scale: 200 }} height={530}>
@@ -131,7 +132,7 @@ const MapChart = () => {
               {({ geographies }) =>
                 geographies.map((geo) => {
                   const arr = [];
-
+                  mapValues(...allCountriesData, (v) => arr.push(v));
                   const cur = arr.filter(
                     (v) => v.code === geo.properties.ISO_A2
                   );
@@ -167,10 +168,9 @@ const MapChart = () => {
           <ReactTooltip />
         </div>
       </div>
-      <div
-        className="col s12 m3"
-        style={{ padding: "0px", height: "100%" }}
-      ></div>
+      <div className="col s12 m3" style={{ padding: "0px", height: "100%" }}>
+        <AllCountries data={state} />
+      </div>
     </div>
   );
 };

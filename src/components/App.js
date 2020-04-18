@@ -15,6 +15,7 @@ import Tipps from "../views/Tipps";
 import Infizierte from "../views/Infizierte";
 import Karte from "../views/Karte";
 import Credit from "../views/Credit";
+import MapChart from "../MapChart";
 
 import "../styles/App.scss";
 import "../styles/Navigation-Bar.scss";
