@@ -42,11 +42,7 @@ export default class Infizierte extends React.Component {
                       <br />
                       recovered
                     </th>
-                    <th>
-                      total
-                      <br />
-                      unresolved
-                    </th>
+
                     <th>
                       total
                       <br />
@@ -85,7 +81,7 @@ export default class Infizierte extends React.Component {
                           <td>{this.state.land[id].total_active_cases}</td>
 
                           <td>{this.state.land[id].total_recovered}</td>
-                          <td>{this.state.land[id].total_unresolved}</td>
+
                           <td>{this.state.land[id].total_deaths}</td>
                           <td>{this.state.land[id].total_new_cases_today}</td>
                           <td>{this.state.land[id].total_new_deaths_today}</td>

@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Player } from "video-react";
 export default function Tips() {
   return (
     <div className="supplies-container">
@@ -32,6 +32,28 @@ export default function Tips() {
         Orientierung &nbsp;
         <i class="fas fa-campground" />
         Unterkunft
+      </div>
+
+      <div className="embed-responsive embed-responsive-21by9">
+        <Player src="https://www.outletdeluxe-24.de/project/video/knoten.MP4" />
+      </div>
+
+      <div className="container">
+        <p>Choose your seasons</p>
+        <div className="row">
+          <div className="col center">
+            <img
+              src={
+                "https://www.outletdeluxe-24.de/project/img/bottles-60475_640.jpg"
+              }
+              className="card-img-top"
+              alt="Johny"
+            />
+            <Player src="https://www.outletdeluxe-24.de/project/video/knoten.MP4" />
+            <h3>title</h3>
+          </div>
+          ))}
+        </div>
       </div>
     </div>
   );
