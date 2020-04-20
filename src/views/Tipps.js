@@ -2,29 +2,37 @@ import React from "react";
 
 export default function Tips() {
   return (
-    <div>
-<<<<<<< HEAD
-      <div className="supplies-container">
-        <div className="container">
-          <h1>Was ist eine Überlebens-Situation (Survival-Situation)?</h1>
-          <ul>
-            <li>
-              1. Du kannst nicht oder nur eingeschränkt auf Infrastruktur
-              zurückgreifen (Wasser- und Stromversorgung, medizinische
-              Versorgung, Lebensmittelversorgung, Transport).
-            </li>
-            <li>
-              2. Die Aufrechterhaltung deiner Grundbedürfnisse erfordert
-              deutlichen Aufwand.
-            </li>
-            <li>3. Du bist mittelfristig auf Rettung angewiesen.</li>
-          </ul>
-          <i className="fab fa-github"></i>
-        </div>
+    <div className="supplies-container">
+      <div className="container">
+        <h2>Was ist eine Überlebens-Situation (Survival-Situation)?</h2>
+        <ol>
+          <li>
+            Du kannst nicht oder nur eingeschränkt auf Infrastruktur
+            zurückgreifen (Wasser- und Stromversorgung, medizinische Versorgung,
+            Lebensmittelversorgung, Transport).
+          </li>
+          <li>
+            Die Aufrechterhaltung deiner Grundbedürfnisse erfordert deutlichen
+            Aufwand.
+          </li>
+          <li>Du bist mittelfristig auf Rettung angewiesen.</li>
+        </ol>
+        <br />
+        <h2>In einer Survival-Situation sind 7 Dinge überlebenswichtig:</h2>
+        <i className="fab fa-gripfire" />
+        Feuer &nbsp;
+        <i class="far fa-life-ring" />
+        Rettung &nbsp;
+        <i class="fas fa-heart" />
+        Unversertheit &nbsp;
+        <i class="fas fa-glass-whiskey" />
+        Wasser &nbsp;
+        <i class="fas fa-drumstick-bite" /> Nahrung &nbsp;
+        <i class="far fa-compass" />
+        Orientierung &nbsp;
+        <i class="fas fa-campground" />
+        Unterkunft
       </div>
-=======
-<p>Tips</p>
->>>>>>> 0b275cfd01783693503d2383f4312ac81ebf5130
     </div>
   );
 }
