@@ -60,6 +60,7 @@ export default class Infizierte extends React.Component {
           .slice(offset, offset + prevState.perPage),
       };
     });
+
   render() {
     return (
       <div>

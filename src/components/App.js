@@ -14,6 +14,7 @@ import Liste from "../views/Liste";
 import Tipps from "../views/Tipps";
 import Infizierte from "../views/Infizierte";
 import Karte from "../views/Karte";
+import TableDemo from "../views/Test";
 import Credit from "../views/Credit";
 
 import "../styles/App.scss";
@@ -50,6 +51,11 @@ function App() {
                 </NavLink>
               </li>
               <li>
+                <NavLink activeClassName="active" to="/test">
+                  test
+                </NavLink>
+              </li>
+              <li>
                 <NavLink activeClassName="active" to="/credit">
                   Credit
                 </NavLink>
@@ -62,6 +68,7 @@ function App() {
             </Route>
             <Route path="/infizierte" component={Infizierte} />
             <Route path="/karte" component={Karte} />
+            <Route path="/test" component={TableDemo} />
             <Route path="/credit" component={Credit} />
             <Route path="/liste" component={Liste} />
             <Route path="*" render={() => <div>404 - Not found</div>} />
