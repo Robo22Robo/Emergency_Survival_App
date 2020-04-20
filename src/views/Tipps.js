@@ -3,6 +3,7 @@ import React from "react";
 export default function Tips() {
   return (
     <div>
+<<<<<<< HEAD
       <div className="supplies-container">
         <div className="container">
           <h1>Was ist eine Überlebens-Situation (Survival-Situation)?</h1>
@@ -21,6 +22,9 @@ export default function Tips() {
           <i className="fab fa-github"></i>
         </div>
       </div>
+=======
+<p>Tips</p>
+>>>>>>> 0b275cfd01783693503d2383f4312ac81ebf5130
     </div>
   );
 }
