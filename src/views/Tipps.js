@@ -33,26 +33,47 @@ export default function Tips() {
         <i class="fas fa-campground" />
         Unterkunft
       </div>
+      <br />
+      <h2>Knoten:</h2>
 
-      <div className="embed-responsive embed-responsive-21by9">
-        <Player src="https://www.outletdeluxe-24.de/project/video/knoten.MP4" />
-      </div>
-
-      <div className="container">
-        <p>Choose your seasons</p>
-        <div className="row">
-          <div className="col center">
-            <img
-              src={
-                "https://www.outletdeluxe-24.de/project/img/bottles-60475_640.jpg"
-              }
+      <div className="row">
+        <div className="col-sm-4">
+          <div className="card" style={{ width: "18rem" }}>
+            <div className="card-body">
+              <p className="card-text">Palstek</p>
+            </div>
+            <Player
+              src="https://www.outletdeluxe-24.de/project/video/knoten.MP4"
               className="card-img-top"
-              alt="Johny"
+              alt="Dicker Mops"
             />
-            <Player src="https://www.outletdeluxe-24.de/project/video/knoten.MP4" />
-            <h3>title</h3>
           </div>
-          ))}
+        </div>
+
+        <div className="col-sm-4">
+          <div className="card" style={{ width: "18rem" }}>
+            <div className="card-body">
+              <p className="card-text">Kreuzknoten</p>
+            </div>
+            <Player
+              src="https://www.outletdeluxe-24.de/project/video/knoten.MP4"
+              className="card-img-top"
+              alt="Dicker Mops"
+            />
+          </div>
+        </div>
+
+        <div className="col-sm-4">
+          <div className="card" style={{ width: "18rem" }}>
+            <div className="card-body">
+              <p className="card-text">Slipstek</p>
+            </div>
+            <Player
+              src="https://www.outletdeluxe-24.de/project/video/knoten.MP4"
+              className="card-img-top"
+              alt="Dicker Mops"
+            />
+          </div>
         </div>
       </div>
     </div>
