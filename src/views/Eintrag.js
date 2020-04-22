@@ -1,7 +1,12 @@
 import React from "react";
 import "../styles/Eintrag.scss";
 
-const Eintrag = ({ todo, eintragClickHandler, eintragClickHandlerShow }) => (
+const Eintrag = ({
+  todo,
+  eintragClickHandler,
+  eintragClickHandlerShow,
+  deleteItem,
+}) => (
   <li className="Eintrag">
     <div className={todo.erledigt ? "Zu" : "Zu Erledigt"}>
       <span onClick={eintragClickHandler}>{todo.titel} </span>
@@ -17,6 +22,7 @@ const Eintrag = ({ todo, eintragClickHandler, eintragClickHandlerShow }) => (
       >
         {todo.erledigt ? "vorbereitet" : "nicht vorbereitet"}
       </button>
+      <button onClick={deleteItem}>delete</button>
     </div>
 
     <div className={todo.show ? "Block Visible" : "Block"}>

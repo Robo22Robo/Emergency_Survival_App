@@ -71,7 +71,7 @@ function App() {
             <Route path="/test" component={TableDemo} />
             <Route path="/credit" component={Credit} />
             <Route path="/liste" component={Liste} />
-            <Route path="*" render={() => <div>404 - Not found</div>} />
+            {/* <Route path="*" render={() => <div>404 - Not found</div>} /> */}
           </Switch>
         </Router>
       </header>
