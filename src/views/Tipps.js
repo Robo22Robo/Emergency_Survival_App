@@ -43,9 +43,9 @@ export default function Tips() {
               <p className="card-text">Palstek</p>
             </div>
             <Player
-              src="https://www.outletdeluxe-24.de/project/video/knoten.MP4"
+              src="https://www.outletdeluxe-24.de/project/video/1_Palstek.mov"
               className="card-img-top"
-              alt="Dicker Mops"
+              alt="Palstek"
             />
           </div>
         </div>
@@ -56,9 +56,9 @@ export default function Tips() {
               <p className="card-text">Kreuzknoten</p>
             </div>
             <Player
-              src="https://www.outletdeluxe-24.de/project/video/knoten.MP4"
+              src="https://www.outletdeluxe-24.de/project/video/2_Kreuzknoten.mov"
               className="card-img-top"
-              alt="Dicker Mops"
+              alt="Kreuzknoten"
             />
           </div>
         </div>
@@ -66,12 +66,25 @@ export default function Tips() {
         <div className="col-sm-4">
           <div className="card" style={{ width: "18rem" }}>
             <div className="card-body">
-              <p className="card-text">Slipstek</p>
+              <p className="card-text">Schotstek</p>
             </div>
             <Player
-              src="https://www.outletdeluxe-24.de/project/video/knoten.MP4"
+              src="https://www.outletdeluxe-24.de/project/video/3_einfacher_doppelter_Schotstek.mov"
               className="card-img-top"
-              alt="Dicker Mops"
+              alt="Schotstek"
+            />
+          </div>
+        </div>
+
+        <div className="col-sm-4">
+          <div className="card" style={{ width: "18rem" }}>
+            <div className="card-body">
+              <p className="card-text">Achtknoten</p>
+            </div>
+            <Player
+              src="https://www.outletdeluxe-24.de/project/video/4_Achtknoten.mov"
+              className="card-img-top"
+              alt="Achtknoten"
             />
           </div>
         </div>
