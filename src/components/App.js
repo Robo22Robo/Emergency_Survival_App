@@ -1,12 +1,7 @@
 /* React */
 import React from "react";
 /* Libraries */
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  NavLink,
-} from "react-router-dom";
+import { HashRouter as Router, Route, Switch, NavLink } from "react-router-dom";
 
 /* Components */
 
@@ -16,6 +11,7 @@ import Infizierte from "../views/Infizierte";
 import Karte from "../views/Karte";
 import TableDemo from "../views/Test";
 import Credit from "../views/Credit";
+import Knoten from "../views/Knoten";
 
 import "../styles/App.scss";
 import "../styles/Navigation-Bar.scss";
@@ -35,6 +31,13 @@ function App() {
                   Survival-Tipps
                 </NavLink>
               </li>
+
+              <li>
+                <NavLink exact activeClassName="active" to="/knoten">
+                  Knoten
+                </NavLink>
+              </li>
+
               <li>
                 <NavLink activeClassName="active" to="/liste">
                   Vorräte
@@ -66,6 +69,7 @@ function App() {
             <Route exact path="/">
               <Tipps />
             </Route>
+            <Route path="/knoten" component={Knoten} />
             <Route path="/infizierte" component={Infizierte} />
             <Route path="/karte" component={Karte} />
             <Route path="/test" component={TableDemo} />
