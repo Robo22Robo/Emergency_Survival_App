@@ -49,6 +49,7 @@
   display: inline-block;
   margin-left: 32px;
   margin-bottom: 4px;
+  width: 165px;
 }
 
 .not {
@@ -57,7 +58,20 @@
   display: inline-block;
   margin-left: 32px;
   margin-bottom: 4px;
+  width: 165px;
 }
+
+.buttonDelete {
+  background-color: lightcoral;
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-right: -20px;
+}
+
+.hide {
+  visibility: hidden;
+}
+
 .descriptionPicture {
   width: 100%;
   border-radius: 10000px;

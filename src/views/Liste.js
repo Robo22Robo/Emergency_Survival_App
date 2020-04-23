@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Eintrag from "./Eintrag";
-import Rechnung from "./Rechnung";
+import Counter from "./Counter";
 
 class Liste extends Component {
   constructor(props) {
@@ -18,6 +18,7 @@ class Liste extends Component {
             "https://www.outletdeluxe-24.de/project/img/bottles-60475_640.jpg",
           erledigt: true,
           show: false,
+          button: false,
         },
         {
           id: 2,
@@ -27,6 +28,7 @@ class Liste extends Component {
             "https://www.outletdeluxe-24.de/project/img/spaghetti-4929957_640.jpg",
           erledigt: false,
           show: false,
+          button: false,
         },
         {
           id: 3,
@@ -36,6 +38,7 @@ class Liste extends Component {
             "https://www.outletdeluxe-24.de/project/img/toilet-paper-3964492_640.jpg",
           erledigt: true,
           show: false,
+          button: false,
         },
         {
           id: 4,
@@ -45,6 +48,7 @@ class Liste extends Component {
             "https://www.outletdeluxe-24.de/project/img/books-1149959_640.jpg",
           erledigt: true,
           show: false,
+          button: false,
         },
         {
           id: 5,
@@ -53,6 +57,7 @@ class Liste extends Component {
           picture: "https://www.outletdeluxe-24.de/project/img/kuchenka.jpg",
           erledigt: true,
           show: false,
+          button: false,
         },
       ];
 
@@ -133,8 +138,10 @@ class Liste extends Component {
       <div className="supplies-container">
         <div className="container">
           <h2 className="supplies-heading">Deine Vorräte:</h2>
+
           <p>Hast du die Vorräte vorbereitet?:</p>
-          <Rechnung number={this.state.liste} />
+
+          <Counter number={this.state.liste} />
 
           <ol>
             {this.state.liste.map((daten) => (
@@ -159,6 +166,7 @@ class Liste extends Component {
                 onChange={this.handleChange}
               />
             </label>
+
             <input type="submit" value="Hinzufügen" />
           </form>
         </div>

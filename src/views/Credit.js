@@ -10,21 +10,21 @@ export default function Credit({ match }) {
       Wählen Sie bitte die Überleben Tipps
       <ul>
         <li>
-          <NavLink activeClassName="active" to={`${match.url}/React`}>
-            React
+          <NavLink activeClassName="active" to={`${match.url}/Survival-Tipps`}>
+            Survival-Tipps
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink activeClassName="active" to={`${match.url}/Corona-Tipps`}>
+            Corona-Tipps
           </NavLink>
         </li>
 
         <li>
           <NavLink activeClassName="active" to={`${match.url}/Knoten`}>
-            Knoten
-          </NavLink>
-        </li>
-
-        <li>
-          <NavLink activeClassName="active" to={`${match.url}/ReactRouter`}>
             {" "}
-            React Router
+            Knoten
           </NavLink>
         </li>
       </ul>

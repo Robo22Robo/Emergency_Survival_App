@@ -8,7 +8,10 @@ export default function Knoten() {
 
         <div className="row">
           <div className="col-sm-4">
-            <div className="card" style={{ width: "18rem" }}>
+            <div
+              className="card"
+              style={{ width: "18rem", marginBottom: "30px" }}
+            >
               <div className="card-body">
                 <p className="card-text">Palstek</p>
               </div>
@@ -21,7 +24,10 @@ export default function Knoten() {
           </div>
 
           <div className="col-sm-4">
-            <div className="card" style={{ width: "18rem" }}>
+            <div
+              className="card"
+              style={{ width: "18rem", marginBottom: "30px" }}
+            >
               <div className="card-body">
                 <p className="card-text">Kreuzknoten</p>
               </div>
@@ -34,7 +40,10 @@ export default function Knoten() {
           </div>
 
           <div className="col-sm-4">
-            <div className="card" style={{ width: "18rem" }}>
+            <div
+              className="card"
+              style={{ width: "18rem", marginBottom: "30px" }}
+            >
               <div className="card-body">
                 <p className="card-text">Schotstek</p>
               </div>
@@ -47,7 +56,10 @@ export default function Knoten() {
           </div>
 
           <div className="col-sm-4">
-            <div className="card" style={{ width: "18rem" }}>
+            <div
+              className="card"
+              style={{ width: "18rem", marginBottom: "30px" }}
+            >
               <div className="card-body">
                 <p className="card-text">Gesteckter Webeleinstek</p>
               </div>
@@ -60,7 +72,10 @@ export default function Knoten() {
           </div>
 
           <div className="col-sm-4">
-            <div className="card" style={{ width: "18rem" }}>
+            <div
+              className="card"
+              style={{ width: "18rem", marginBottom: "30px" }}
+            >
               <div className="card-body">
                 <p className="card-text">
                   Eineinhalb Rundtörn mit zwei halben Schlägen
@@ -75,7 +90,10 @@ export default function Knoten() {
           </div>
 
           <div className="col-sm-4">
-            <div className="card" style={{ width: "18rem" }}>
+            <div
+              className="card"
+              style={{ width: "18rem", marginBottom: "30px" }}
+            >
               <div className="card-body">
                 <p className="card-text">Belegen auf einer Klampe</p>
               </div>
@@ -88,7 +106,10 @@ export default function Knoten() {
           </div>
 
           <div className="col-sm-4">
-            <div className="card" style={{ width: "18rem" }}>
+            <div
+              className="card"
+              style={{ width: "18rem", marginBottom: "30px" }}
+            >
               <div className="card-body">
                 <p className="card-text">Achtknoten</p>
               </div>
@@ -101,7 +122,10 @@ export default function Knoten() {
           </div>
 
           <div className="col-sm-4">
-            <div className="card" style={{ width: "18rem" }}>
+            <div
+              className="card"
+              style={{ width: "18rem", marginBottom: "30px" }}
+            >
               <div className="card-body">
                 <p className="card-text">Webeleinstek</p>
               </div>
@@ -114,7 +138,10 @@ export default function Knoten() {
           </div>
 
           <div className="col-sm-4">
-            <div className="card" style={{ width: "18rem" }}>
+            <div
+              className="card"
+              style={{ width: "18rem", marginBottom: "30px" }}
+            >
               <div className="card-body">
                 <p className="card-text">Stopperstek</p>
               </div>

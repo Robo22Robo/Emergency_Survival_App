@@ -8,7 +8,12 @@ const Eintrag = ({
   deleteItem,
 }) => (
   <li className="Eintrag">
-    <div className={todo.erledigt ? "Zu" : "Zu Erledigt"}>
+    <hr></hr>
+    <div
+      className={
+        todo.erledigt ? "Zu col-9 text-right" : "Zu Erledigt col-9 text-right"
+      }
+    >
       <span onClick={eintragClickHandler}>{todo.titel} </span>
 
       <div
@@ -17,12 +22,17 @@ const Eintrag = ({
       ></div>
 
       <button
+        className={todo.hide ? "buttonDelete" : "buttonDelete hide"}
+        onClick={deleteItem}
+      >
+        Löschen
+      </button>
+      <button
         className={todo.erledigt ? "ButtonAvailable" : "not"}
         onClick={eintragClickHandler}
       >
         {todo.erledigt ? "vorbereitet" : "nicht vorbereitet"}
       </button>
-      <button onClick={deleteItem}>delete</button>
     </div>
 
     <div className={todo.show ? "Block Visible" : "Block"}>
