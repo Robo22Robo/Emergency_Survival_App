@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDom from "react-dom";
 
 import ObjectList from "react-object-list";
 import { TextContainsFilter } from "react-object-list/filters";

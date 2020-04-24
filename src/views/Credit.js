@@ -29,7 +29,7 @@ export default function Credit({ match }) {
         </li>
       </ul>
       <Route path={`${match.url}/:whoCredit`} component={Topic}></Route>
-      <Route path="/knoten" component={Knoten} />
+      <Route path={`${match.url}/Knoten`} component={Knoten} />
     </div>
   );
 }

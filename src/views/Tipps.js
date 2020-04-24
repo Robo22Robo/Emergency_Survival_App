@@ -1,5 +1,5 @@
 import React from "react";
-import { Player } from "video-react";
+
 export default function Tips() {
   return (
     <div className="supplies-container">
