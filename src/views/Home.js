@@ -4,15 +4,15 @@ import Knoten from "../views/Knoten";
 import Survival from "./Survival";
 import Corona from "../views/Corona";
 
-export default function Tipps({ match }) {
+export default function Home({ match }) {
   return (
-    <div className="supplies-container black" style={{ paddingTop: "0px" }}>
+    <div className="supplies-container black">
       <div className="white">
         {/* Here we create a NESTED ROUTE */}
         Wählen Sie bitte die Überlebenstipps:
         <ul>
           <li>
-            <NavLink activeClassName="active" to={`${match.url}/Survival`}>
+            <NavLink activeClassName="active" to={`/home${match.url}Survival`}>
               Survival-Tipps
             </NavLink>
           </li>

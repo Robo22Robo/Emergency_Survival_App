@@ -2,9 +2,9 @@ import React from "react";
 import { Player } from "video-react";
 export default function Knoten() {
   return (
-    <div className="supplies-container">
+    <div className="cont textblack">
       <div className="container">
-        <h2>Knoten:</h2>
+        <h2 style={{ marginTop: "0px", paddingTop: "10px" }}>Knoten:</h2>
 
         <div className="row">
           <div className="col-sm-4">

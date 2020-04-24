@@ -6,12 +6,11 @@ import { HashRouter as Router, Route, Switch, NavLink } from "react-router-dom";
 /* Components */
 
 import Liste from "../views/Liste";
-import Tipps from "../views/Tipps";
+import Willkommen from "../views/Willkommen";
 import Infizierte from "../views/Infizierte";
 import Karte from "../views/Karte";
 import TableDemo from "../views/Test";
-import Credit from "../views/Credit";
-import Knoten from "../views/Knoten";
+import Tipps from "../views/Tipps";
 
 import "../styles/App.scss";
 import "../styles/Navigation-Bar.scss";
@@ -28,13 +27,13 @@ function App() {
             <ul className="Navigation-Bar">
               <li>
                 <NavLink exact activeClassName="active" to="/">
-                  Survival-Tipps
+                  Willkommen
                 </NavLink>
               </li>
 
               <li>
-                <NavLink exact activeClassName="active" to="/knoten">
-                  Knoten
+                <NavLink activeClassName="active" to="/tipps">
+                  Tipps
                 </NavLink>
               </li>
 
@@ -53,27 +52,24 @@ function App() {
                   Corona Karte
                 </NavLink>
               </li>
-              <li>
+
+              {/* <li>
                 <NavLink activeClassName="active" to="/test">
                   test
                 </NavLink>
-              </li>
-              <li>
-                <NavLink activeClassName="active" to="/credit">
-                  Credit
-                </NavLink>
-              </li>
+              </li> */}
             </ul>
           </div>
           <Switch>
             <Route exact path="/">
-              <Tipps />
+              <Willkommen />
             </Route>
-            <Route path="/knoten" component={Knoten} />
+            <Route path="/tipps" component={Tipps} />
+
             <Route path="/infizierte" component={Infizierte} />
             <Route path="/karte" component={Karte} />
             <Route path="/test" component={TableDemo} />
-            <Route path="/credit" component={Credit} />
+
             <Route path="/liste" component={Liste} />
             {/* <Route path="*" render={() => <div>404 - Not found</div>} /> */}
           </Switch>
