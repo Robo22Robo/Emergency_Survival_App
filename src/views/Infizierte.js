@@ -63,7 +63,7 @@ export default class Infizierte extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="supplies-container">
         {this.state.loading || !this.state.land ? (
           <div>loading...</div>
         ) : (

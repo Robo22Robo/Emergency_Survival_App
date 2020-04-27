@@ -1,10 +1,5 @@
 @import "~bootstrap/scss/bootstrap.scss";
 @import "~video-react/styles/scss/video-react";
-@import "node_modules/react-object-list/styles/main";
-
-.App {
-  text-align: center;
-}
 
 h2 {
   margin: 15px;
@@ -22,21 +17,27 @@ h2 {
   text-align: center;
 }
 
+.page-header {
+  background-color: #24272c;
+}
+
 .wilkommen-page-header {
   background-image: url("../img/covid-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 500px;
+  height: 75vh;
 }
-
+.transparent {
+  opacity: 0.6;
+}
 .black {
-  background-color: #24272c;
+  background-color: #282c34;
 }
 .white {
   color: white;
 }
-.textblack {
-  color: black;
+
+.Tipps-Nav {
 }
 
 .cont {
@@ -57,4 +58,22 @@ h2 {
 
 .Arrow {
   display: inline;
+}
+
+.supplies-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(245, 245, 245);
+  color: black;
+  margin: auto;
+  width: 80%;
+  max-width: 960px;
+  position: relative;
+  text-align: center;
+}
+
+.page-header {
+  display: flex;
+  background-color: #24272c;
+  justify-content: center;
 }

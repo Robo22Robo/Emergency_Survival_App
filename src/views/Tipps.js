@@ -6,44 +6,67 @@ import Corona from "../views/Corona";
 
 export default function Tipps({ match }) {
   return (
-    <div className="supplies-container black" style={{ paddingTop: "0px" }}>
-      <div className="white">
-        {/* Here we create a NESTED ROUTE */}
+    <div className="supplies-container">
+      <h4 style={{ paddingBottom: "10px" }}>
         Wählen Sie bitte die Überlebenstipps:
-        <ul>
-          <li>
-            <NavLink activeClassName="active" to={`${match.url}/Survival`}>
-              Survival-Tipps
-            </NavLink>
-          </li>
+      </h4>
+      <div className="Tipps-Nav">
+        <div className="container">
+          <ul>
+            <div className="row">
+              <div className="col-sm">
+                <li>
+                  <NavLink
+                    activeClassName="active"
+                    to={`${match.url}/Survival`}
+                  >
+                    <h5>Survival-Tipps</h5>
+                    <div className="Tipps-Icon">
+                      <i className="fas fa-campground"></i>
+                    </div>
+                  </NavLink>
+                </li>
+              </div>
 
-          <li>
-            <NavLink activeClassName="active" to={`${match.url}/Corona`}>
-              Corona-Tipps
-            </NavLink>
-          </li>
+              <div className="col-sm">
+                <li>
+                  <NavLink activeClassName="active" to={`${match.url}/Corona`}>
+                    <h5>Corona-Tipps</h5>
+                    <div className="Tipps-Icon">
+                      <i className="fas fa-crown"></i>
+                    </div>
+                  </NavLink>
+                </li>
+              </div>
 
-          <li>
-            <NavLink activeClassName="active" to={`${match.url}/Knoten`}>
-              {" "}
-              Knoten
-            </NavLink>
-          </li>
-        </ul>
-        <Route path={`${match.url}/:whoCredit`} component={Topic}></Route>
-        <Route path={`${match.url}/Knoten`} component={Knoten} />
-        <Route path={`${match.url}/Survival`} component={Survival} />
-        <Route path={`${match.url}/Corona`} component={Corona} />
+              <div className="col-sm">
+                <li>
+                  <NavLink activeClassName="active" to={`${match.url}/Knoten`}>
+                    <h5>Knoten</h5>
+                    <div className="Tipps-Icon">
+                      <i className="fas fa-code-branch"></i>
+                    </div>
+                  </NavLink>
+                </li>
+              </div>
+            </div>
+          </ul>
+          <hr></hr>
+        </div>
       </div>
+      <Route path={`${match.url}/:whoCredit`} component={Topic}></Route>
+      <Route path={`${match.url}/Knoten`} component={Knoten} />
+      <Route path={`${match.url}/Survival`} component={Survival} />
+      <Route path={`${match.url}/Corona`} component={Corona} />
     </div>
   );
 }
 /* Child React component*/
 const Topic = ({ match }) => {
   return (
-    <div className="cont textblack">
+    <div>
       <h3 style={{ marginBottom: "0px", paddingTop: "5px" }}>
-        Topic selected {match.params.whoCredit} Tipps
+        Topic selected {match.params.whoCredit}-Tipps
       </h3>
     </div>
   );

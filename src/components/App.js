@@ -9,9 +9,9 @@ import Liste from "../views/Liste";
 import Willkommen from "../views/Willkommen";
 import Infizierte from "../views/Infizierte";
 import Karte from "../views/Karte";
-import TableDemo from "../views/Test";
-import Tipps from "../views/Tipps";
 
+import Tipps from "../views/Tipps";
+import Kontakt from "../views/Kontakt";
 import "../styles/App.scss";
 import "../styles/Navigation-Bar.scss";
 
@@ -22,8 +22,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>{welcome}</h1>
-        <Router>
-          <div>
+      </header>
+
+      <Router>
+        <div className="page-header">
+          <div className="container">
             <nav className="navbar navbar-expand-sm navbar-dark">
               <button
                 className="navbar-toggler"
@@ -70,61 +73,70 @@ function App() {
                       Corona&nbsp;Karte
                     </NavLink>
                   </a>
+                  <a className="nav-item nav-link">
+                    <NavLink activeClassName="active" to="/kontakt">
+                      Kontakt
+                    </NavLink>
+                  </a>
                 </div>
               </div>
             </nav>
-
-            {/* <ul className="Navigation-Bar">
-              <li>
-                <NavLink exact activeClassName="active" to="/">
-                  Willkommen
-                </NavLink>
-              </li>
-
-              <li>
-                <NavLink activeClassName="active" to="/tipps">
-                  Tipps
-                </NavLink>
-              </li>
-
-              <li>
-                <NavLink activeClassName="active" to="/liste">
-                  Vorräte
-                </NavLink>
-              </li>
-              <li>
-                <NavLink activeClassName="active" to="/infizierte">
-                  Infizierte
-                </NavLink>
-              </li>
-              <li>
-                <NavLink activeClassName="active" to="/karte">
-                  Corona Karte
-                </NavLink>
-              </li>
-
-               <li>
-                <NavLink activeClassName="active" to="/test">
-                  test
-                </NavLink>
-              </li>
-            </ul> */}
           </div>
+          {/* <ul className="Navigation-Bar">
+            <li>
+              <NavLink exact activeClassName="active" to="/">
+                Willkommen
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink activeClassName="active" to="/tipps">
+                Tipps
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink activeClassName="active" to="/liste">
+                Vorräte
+              </NavLink>
+            </li>
+            <li>
+              <NavLink activeClassName="active" to="/infizierte">
+                Infizierte
+              </NavLink>
+            </li>
+            <li>
+              <NavLink activeClassName="active" to="/karte">
+                Corona Karte
+              </NavLink>
+            </li>
+
+           <li>
+              <NavLink activeClassName="active" to="/test">
+                test
+              </NavLink>
+            </li>
+           </ul>  */}
+        </div>
+
+        <div>
           <Switch>
-            <Route exact path="/">
-              <Willkommen />
-            </Route>
-            <Route path="/tipps" component={Tipps} />
+            <div>
+              <Route exact path="/">
+                <Willkommen />
+              </Route>
+              <Route path="/tipps" component={Tipps} />
 
-            <Route path="/infizierte" component={Infizierte} />
-            <Route path="/karte" component={Karte} />
-            <Route path="/test" component={TableDemo} />
+              <Route path="/infizierte" component={Infizierte} />
+              <Route path="/karte" component={Karte} />
 
-            <Route path="/liste" component={Liste} />
-            {/* <Route path="*" render={() => <div>404 - Not found</div>} /> */}
+              <Route path="/liste" component={Liste} />
+              <Route path="/kontakt" component={Kontakt} />
+              {/* <Route path="*" render={() => <div>404 - Not found</div>} /> */}
+            </div>
           </Switch>
-        </Router>
-      </header>
+        </div>
+      </Router>
     </div>
   );
 }
