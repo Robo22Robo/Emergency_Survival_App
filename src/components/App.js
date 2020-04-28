@@ -12,6 +12,8 @@ import Karte from "../views/Karte";
 
 import Tipps from "../views/Tipps";
 import Kontakt from "../views/Kontakt";
+import Success from "../views/Success";
+
 import "../styles/App.scss";
 import "../styles/Navigation-Bar.scss";
 
@@ -132,6 +134,7 @@ function App() {
 
               <Route path="/liste" component={Liste} />
               <Route path="/kontakt" component={Kontakt} />
+              <Route path="/Success" component={Success} />
               {/* <Route path="*" render={() => <div>404 - Not found</div>} /> */}
             </div>
           </Switch>
