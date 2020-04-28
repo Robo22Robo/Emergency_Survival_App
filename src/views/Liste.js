@@ -158,10 +158,10 @@ class Liste extends Component {
           </ol>
 
           <form onSubmit={this.handlerSubmit}>
-            <label>
-              Neuer Eintrag:{" "}
+            <label className="Eintrag-label">
               <input
                 type="text"
+                placeholder="Dein Eintrag"
                 value={this.state.neuerEintrag}
                 onChange={this.handleChange}
               />
