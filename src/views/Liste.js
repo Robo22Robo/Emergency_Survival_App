@@ -16,7 +16,7 @@ class Liste extends Component {
             "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
           picture:
             "https://www.outletdeluxe-24.de/project/img/bottles-60475_640.jpg",
-          erledigt: true,
+          erledigt: false,
           show: false,
           button: false,
         },
@@ -36,7 +36,7 @@ class Liste extends Component {
           description: "description3",
           picture:
             "https://www.outletdeluxe-24.de/project/img/toilet-paper-3964492_640.jpg",
-          erledigt: true,
+          erledigt: false,
           show: false,
           button: false,
         },
@@ -46,7 +46,7 @@ class Liste extends Component {
           description: "description4",
           picture:
             "https://www.outletdeluxe-24.de/project/img/books-1149959_640.jpg",
-          erledigt: true,
+          erledigt: false,
           show: false,
           button: false,
         },
@@ -55,7 +55,7 @@ class Liste extends Component {
           titel: "ggf. Vorsorge Blackout-Szenario",
           description: "description5",
           picture: "https://www.outletdeluxe-24.de/project/img/kuchenka.jpg",
-          erledigt: true,
+          erledigt: false,
           show: false,
           button: false,
         },

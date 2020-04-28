@@ -16,7 +16,7 @@ export default function Knoten() {
                 <p className="card-text">Palstek</p>
               </div>
               <Player
-                src="https://www.outletdeluxe-24.de/project/video/1_Palstek.mov"
+                src="https://emergency-survival-app.com/src/video/1_Palstek.mov"
                 className="card-img-top"
                 alt="Palstek"
               />
@@ -32,7 +32,7 @@ export default function Knoten() {
                 <p className="card-text">Kreuzknoten</p>
               </div>
               <Player
-                src="https://www.outletdeluxe-24.de/project/video/2_Kreuzknoten.mp4"
+                src="https://emergency-survival-app.com/src/video/2_Kreuzknoten.mp4"
                 className="card-img-top"
                 alt="Kreuzknoten"
               />
@@ -48,7 +48,7 @@ export default function Knoten() {
                 <p className="card-text">Schotstek</p>
               </div>
               <Player
-                src="https://www.outletdeluxe-24.de/project/video/3_Schotstek.mp4"
+                src="https://emergency-survival-app.com/src/video/3_Schotstek.mp4"
                 className="card-img-top"
                 alt="Schotstek"
               />
@@ -64,7 +64,7 @@ export default function Knoten() {
                 <p className="card-text">Gesteckter Webeleinstek</p>
               </div>
               <Player
-                src="https://www.outletdeluxe-24.de/project/video/4_gesteckter_Webeleinstek.mp4"
+                src="https://emergency-survival-app.com/src/video/4_gesteckter_Webeleinstek.mp4"
                 className="card-img-top"
                 alt="Gesteckter Webeleinstek"
               />
@@ -77,12 +77,10 @@ export default function Knoten() {
               style={{ width: "18rem", marginBottom: "30px" }}
             >
               <div className="card-body">
-                <p className="card-text">
-                  Eineinhalb Rundtörn mit zwei halben Schlägen
-                </p>
+                <p className="card-text">Eineinhalb Rundtörn mit Schlägen</p>
               </div>
               <Player
-                src="https://www.outletdeluxe-24.de/project/video/5_eineinhalb_Rundtorn.mp4"
+                src="https://emergency-survival-app.com/src/video/5_eineinhalb_Rundtorn.mp4"
                 className="card-img-top"
                 alt="Eineinhalb Rundtörn mit zwei halben Schlägen"
               />
@@ -98,7 +96,7 @@ export default function Knoten() {
                 <p className="card-text">Belegen auf einer Klampe</p>
               </div>
               <Player
-                src="https://www.outletdeluxe-24.de/project/video/6_Belegen_auf_einer_Klampe.mp4"
+                src="https://emergency-survival-app.com/src/video/6_Belegen_auf_einer_Klampe.mp4"
                 className="card-img-top"
                 alt="Belegen auf einer Klampe"
               />
@@ -114,7 +112,7 @@ export default function Knoten() {
                 <p className="card-text">Achtknoten</p>
               </div>
               <Player
-                src="https://www.outletdeluxe-24.de/project/video/7_Achtknoten.mp4"
+                src="https://emergency-survival-app.com/src/video/7_Achtknoten.mp4"
                 className="card-img-top"
                 alt="Achtknoten"
               />
@@ -130,7 +128,7 @@ export default function Knoten() {
                 <p className="card-text">Webeleinstek</p>
               </div>
               <Player
-                src="https://www.outletdeluxe-24.de/project/video/8_Webeleinstek.mp4"
+                src="https://emergency-survival-app.com/src/video/8_Webeleinstek.mp4"
                 className="card-img-top"
                 alt="Webeleinstek"
               />
@@ -146,7 +144,7 @@ export default function Knoten() {
                 <p className="card-text">Stopperstek</p>
               </div>
               <Player
-                src="https://www.outletdeluxe-24.de/project/video/9_Stopperstek_rechts_und_links.mp4"
+                src="https://emergency-survival-app.com/src/video/9_Stopperstek_rechts_und_links.mp4"
                 className="card-img-top"
                 alt="Stopperstek"
               />

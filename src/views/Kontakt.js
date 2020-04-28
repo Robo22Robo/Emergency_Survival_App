@@ -1,85 +1,86 @@
 import React from "react";
+
+import "../styles/Kontakt.scss";
+
 export default function Kontakt() {
   return (
     <div className="supplies-container">
       <div className="container">
-        <p>Contact Me</p>
+        <div className="contact">
+          <h2>Kontaktformular</h2>
+          <p>Hinterlasse mir doch eine Nachricht!</p>
+          <div className="row">
+            <div className="col-5">
+              <ul className="contact-methods">
+                <li>
+                  <a href="mailto:info@emergency-survival-app.com">
+                    <span className="contact-icon">
+                      <i className="far fa-envelope-open"></i>
+                    </span>
+                    E-Mail
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/Robo22Robo" target="_blank">
+                    <span className="contact-icon">
+                      <i className="fab fa-github"></i>
+                    </span>
+                    GitHub
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/robert-krawczyk-71020b1a2/"
+                    target="_blank"
+                  >
+                    <span className="contact-icon">
+                      <i className="fab fa-linkedin"></i>
+                    </span>
+                    linkedin
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="col-5">
+              <form className="contact-form" action="form.php" method="POST">
+                <input
+                  name="name"
+                  id="contact-name"
+                  className="contact-input"
+                  type="text"
+                  placeholder="Your Name *"
+                  required="required"
+                />
+                <br />
 
-        <form class="contact-form" action="form.php" method="POST">
-          <label for="contact-name" class="contact-label">
-            Your Name *
-          </label>
-          <input
-            name="name"
-            id="contact-name"
-            class="contact-input"
-            type="text"
-            placeholder="Your Name *"
-            required="required"
-          />
-          <br />
-          <label for="contact-email" class="contact-label">
-            Your Email *
-          </label>
-          <input
-            name="email"
-            id="contact-email"
-            class="contact-input"
-            type="text"
-            placeholder="Your Email *"
-            required="required"
-          />
-          <br />
-          <label for="contact-message" class="contact-label">
-            Your message *
-          </label>
-          <textarea
-            name="message"
-            id="contact-message"
-            class="contact-input contact-message"
-            placeholder="Your message *"
-            required="required"
-          ></textarea>
-          <br />
-          <input class="contact-submit" type="submit" value="Submit message" />
-        </form>
+                <input
+                  type="email"
+                  name="email"
+                  id="contact-email"
+                  className="contact-input"
+                  placeholder="Your Email *"
+                  required="required"
+                />
+                <br />
 
-        {/* <div>
-          <form action="/action_page.php">
-            <label>First Name</label>
-            <input
-              type="text"
-              id="lname"
-              name="lastname"
-              placeholder="Your last name.."
-            />
-            <br />
-            <label>Last Name</label>
-            <input
-              type="text"
-              id="lname"
-              name="lastname"
-              placeholder="Your last name.."
-            />
-            <br />
-            <label>Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Your email"
-            />
-            <br />
-            <label>Subject</label>
-            <textarea
-              id="subject"
-              name="subject"
-              placeholder="Write something.."
-            ></textarea>
-            <br />
-            <input type="submit" value="Submit" />
-          </form>
-        </div> */}
+                <textarea
+                  name="message"
+                  id="contact-message"
+                  className="contact-input contact-message"
+                  placeholder="Your message *"
+                  required="required"
+                ></textarea>
+                <br />
+                <br />
+                <input
+                  className="contact-submit"
+                  type="submit"
+                  value="Nachricht abschicken!"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -29,7 +29,7 @@ function App() {
       <Router>
         <div className="page-header">
           <div className="container">
-            <nav className="navbar navbar-expand-sm navbar-dark">
+            <nav className="navbar navbar-expand-md navbar-dark">
               <button
                 className="navbar-toggler"
                 type="button"
@@ -47,7 +47,7 @@ function App() {
                 id="navbarNavAltMarkup"
               >
                 <div className="navbar-nav">
-                  <a className="nav-item nav-link active" href="#">
+                  <a className="nav-item nav-link active">
                     <NavLink exact activeClassName="active" to="/">
                       Willkommen
                     </NavLink>
@@ -84,41 +84,6 @@ function App() {
               </div>
             </nav>
           </div>
-          {/* <ul className="Navigation-Bar">
-            <li>
-              <NavLink exact activeClassName="active" to="/">
-                Willkommen
-              </NavLink>
-            </li>
-
-            <li>
-              <NavLink activeClassName="active" to="/tipps">
-                Tipps
-              </NavLink>
-            </li>
-
-            <li>
-              <NavLink activeClassName="active" to="/liste">
-                Vorräte
-              </NavLink>
-            </li>
-            <li>
-              <NavLink activeClassName="active" to="/infizierte">
-                Infizierte
-              </NavLink>
-            </li>
-            <li>
-              <NavLink activeClassName="active" to="/karte">
-                Corona Karte
-              </NavLink>
-            </li>
-
-           <li>
-              <NavLink activeClassName="active" to="/test">
-                test
-              </NavLink>
-            </li>
-           </ul>  */}
         </div>
 
         <div>
@@ -135,11 +100,11 @@ function App() {
               <Route path="/liste" component={Liste} />
               <Route path="/kontakt" component={Kontakt} />
               <Route path="/Success" component={Success} />
-              {/* <Route path="*" render={() => <div>404 - Not found</div>} /> */}
             </div>
           </Switch>
         </div>
       </Router>
+      <div className="footer"></div>
     </div>
   );
 }
