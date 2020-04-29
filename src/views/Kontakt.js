@@ -8,7 +8,9 @@ export default function Kontakt() {
       <div className="supplies-container transparent-contact">
         <div className="container">
           <div className="contact">
-            <h2>Kontaktformular</h2>
+            <h2 style={{ marginTop: "0px", marginBottom: "5px" }}>
+              Kontaktformular
+            </h2>
             <p>Hinterlasse mir doch eine Nachricht!</p>
             <div className="row">
               <div className="col-6">

@@ -137,7 +137,13 @@ class Liste extends Component {
     return (
       <div className="supplies-container">
         <div className="container">
-          <h2 className="supplies-heading">Deine Vorräte:</h2>
+          <h2
+            style={{ marginTop: "0px", marginBottom: "5px" }}
+            className="supplies-heading"
+          >
+            {" "}
+            Deine Vorräte:
+          </h2>
 
           <p>Hast du die Vorräte vorbereitet?:</p>
 
