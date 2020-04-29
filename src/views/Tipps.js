@@ -66,7 +66,7 @@ const Topic = ({ match }) => {
   return (
     <div>
       <h3 style={{ marginBottom: "0px", paddingTop: "5px" }}>
-        Topic selected {match.params.whoCredit}-Tipps
+        Ausgewähltes Thema: {match.params.whoCredit}-Tipps
       </h3>
     </div>
   );
