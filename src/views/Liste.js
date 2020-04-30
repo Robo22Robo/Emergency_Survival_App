@@ -13,9 +13,9 @@ class Liste extends Component {
           id: 1,
           titel: "Wasser",
           description:
-            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+            "2 Liter pro Tag und Person, Menge 20 Liter. Bei dem vorgeschlagenen Getränke-vorrat wurde über den reinen Bedarf eines Erwachsenen von mindestens 1,5 Litern pro Person und Tag hin-aus ein Zuschlag von 0,5 Litern vor-genommen, um unabhängig von der öffentlichen Trinkwasserversorgung auch über Wasser zur Zubereitung von Lebensmitteln wie z. B. Teigwaren, Reis oder Kartoffeln zu verfügen.",
           picture:
-            "https://www.outletdeluxe-24.de/project/img/bottles-60475_640.jpg",
+            "https://emergency-survival-app.com/src/img/bottles-60475_640.jpg",
           erledigt: false,
           show: false,
           button: false,
@@ -23,38 +23,53 @@ class Liste extends Component {
         {
           id: 2,
           titel: "Lebensmittel",
-          description: "description2",
+          description:
+            "Menge 3,5 kg - Getreide, Getreideprodukte, Brot, Kartoffeln, Nudeln, Reis. Gemüse, Hülsenfrücht 4,0 kg - Denken Sie daran, dass Gemüse und Hülsenfrüchte im Glas oder in Dosen bereits gekocht sind und für getrocknete Produkte zusätzlich Wasser benötigt wird. Obst, Nüsse 2,5 kg - Bevorraten Sie Obst in Dosen oder Gläsern und verwenden Sie als Frisch-obst nur lagerfähiges Obst. Sonstiges nach Belieben z. B. Fisch, Fleisch, Eier, bzw. Volleipulver Bitte beachten Sie, dass frische Eier nur begrenzt lagerfähig sind, Volleipulver ist hingegen mehrere Jahre haltbar.",
           picture:
-            "https://www.outletdeluxe-24.de/project/img/spaghetti-4929957_640.jpg",
+            "https://emergency-survival-app.com/src/img/spaghetti-4929957_640.jpg",
           erledigt: false,
           show: false,
           button: false,
         },
+
         {
           id: 3,
-          titel: "Toilettenpapier",
-          description: "description3",
-          picture:
-            "https://www.outletdeluxe-24.de/project/img/toilet-paper-3964492_640.jpg",
+          titel: "Hausapotheke",
+          description:
+            "DIN-Verbandskasten, vom Arzt verordnete Medikamente, Schmerzmittel, Hautdesinfektionsmittel, Wunddesinfektionsmittel, Mittel gegen Erkältungskrankheiten, Fieberthermometer, Mittel gegen Durchfall, Insektenstich- und Sonnenbrandsalbe, Splitterpinzette.",
+          picture: "https://emergency-survival-app.com/src/img/medicine.jpg",
           erledigt: false,
           show: false,
           button: false,
         },
+
         {
           id: 4,
-          titel: "Zeitvertreib in Quarantäne-Situation",
-          description: "description4",
+          titel: "Toilettenpapier",
+          description:
+            "Ein paar Packungen Toilettenpapier reichen vollkommen, bitte nicht übertreiben.",
           picture:
-            "https://www.outletdeluxe-24.de/project/img/books-1149959_640.jpg",
+            "https://emergency-survival-app.com/src/img/toilet-paper-3964492_640.jpg",
           erledigt: false,
           show: false,
           button: false,
         },
         {
           id: 5,
+          titel: "Zeitvertreib in Quarantäne-Situation",
+          description: "Bücher, Hobbies",
+          picture:
+            "https://emergency-survival-app.com/src/img/books-1149959_640.jpg",
+          erledigt: false,
+          show: false,
+          button: false,
+        },
+        {
+          id: 6,
           titel: "ggf. Vorsorge Blackout-Szenario",
-          description: "description5",
-          picture: "https://www.outletdeluxe-24.de/project/img/kuchenka.jpg",
+          description:
+            "Kerzen, Teelichter, Streichhölzer, Feuerzeug, Taschenlampe, Reservebatterien, Camping-, Spirituskocher mit Brennmaterial, Heizgelegenheit, Brennstoffe",
+          picture: "https://emergency-survival-app.com/src/img/kuchenka.jpg",
           erledigt: false,
           show: false,
           button: false,
