@@ -6,7 +6,7 @@ export default function Success() {
         <h2>Deine Nachricht wurde versendet</h2>
         <img
           style={{ width: "18rem" }}
-          src="https://www.outletdeluxe-24.de/project/img/e-mail.png"
+          src="https://emergency-survival-app.com/src/img/e-mail.png"
         ></img>
         <h3>Dankeschön, ich melde mich in kürze</h3>
         <br />
