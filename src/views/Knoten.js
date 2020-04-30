@@ -77,7 +77,7 @@ export default function Knoten() {
               style={{ width: "18rem", marginBottom: "30px" }}
             >
               <div className="card-body">
-                <p className="card-text">Eineinhalb Rundtörn mit Schlägen</p>
+                <p className="card-text">Eineinhalb Rundtörn</p>
               </div>
               <Player
                 src="https://emergency-survival-app.com/src/video/5_eineinhalb_Rundtorn.mp4"

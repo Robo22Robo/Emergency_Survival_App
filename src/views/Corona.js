@@ -5,58 +5,58 @@ export default function Corona() {
     <div className="cont textblack">
       <div className="container">
         <h4 style={{ marginTop: "0px", paddingTop: "15px" }}>
-          Hintergrund des Virus
+          Hintergrund des Virus m Vergleich zur Grippe:
+        </h4>
+
+        <p>
+          <ol>
+            <li>Wahrscheinlich deutlich ansteckender</li>
+            <li>Krankheitsverlauf kann extremer sein</li>
+            <li>Wahrscheinlich höhere Sterblichkeitsrate</li>
+            <li>Noch kein Impfstoff</li>
+          </ol>
+        </p>
+        <h4 style={{ marginTop: "0px", paddingTop: "15px" }}>
+          Staatliche Maßnahmen in Deutschland:
         </h4>
         <p>
-          Im Vergleich zur Grippe:
-          <br />
-          1. Wahrscheinlich deutlich ansteckender
-          <br />
-          2. Krankheitsverlauf kann extremer sein
-          <br />
-          3. Wahrscheinlich höhere Sterblichkeitsrate
-          <br />
-          4. Noch kein Impfstoff
+          <ol>
+            <li>Absage von Großveranstaltungen</li>
+            <li>Bereitstellung von Isolierzimmern in Krankenhäusern</li>
+            <li>Quarantäne-Maßnahmen</li>
+            <li>Einschränkungen ÖPNV</li>
+            <li>
+              Einschränkungen Grundrecht der Freiheit der Person und
+              Versammlungsfreiheit, Unverletzlichkeit der Wohnung
+            </li>
+            <li>
+              Pflicht zur Teilnahme an Schutzimpfungen oder anderen Prophylaxen
+            </li>
+          </ol>
         </p>
 
         <h4 style={{ marginTop: "0px", paddingTop: "15px" }}>
-          Staatliche Maßnahmen in Deutschland
+          Verhaltensmaßnahmen:
         </h4>
         <p>
-          1.Absage von Großveranstaltungen
-          <br />
-          2.Bereitstellung von Isolierzimmern in Krankenhäusern
-          <br />
-          3.Quarantäne-Maßnahmen
-          <br />
-          4.Einschränkungen ÖPNV
-          <br />
-          5.Einschränkungen Grundrecht der Freiheit der Person und
-          Versammlungsfreiheit, Unverletzlichkeit der Wohnung
-          <br />
-          6.Pflicht zur Teilnahme an Schutzimpfungen oder anderen Prophylaxen
-        </p>
-
-        <h4 style={{ marginTop: "0px", paddingTop: "15px" }}>
-          Verhaltensmaßnahmen
-        </h4>
-        <p>
-          1. DISZIPLIN
-          <br />
-          a. Persönliche Hygiene, v.a. Händewaschen
-          <br />
-          b. Nies --& Hust Etikette
-          <br />
-          c. Schutzkleidung richtig einsetzen
-          <br />
-          2. Achtsamkeit
-          <br />
-          3. Immunsystem stärken <br />
-          Vitamin D & C, Polyphenole, Zink, Selen
-          <br />
-          4. Plan machen, Szenarien im Kopf durchspielen
-          <br />
-          5. Panik & Stress vermeiden (Anfälligkeit für Infektionen)
+          <ol>
+            <li>
+              DISZIPLIN
+              <ul>
+                <li> Persönliche Hygiene, v.a. Händewaschen </li>
+                <li>Nies & Hust Etikette</li>
+                <li>Schutzkleidung richtig einsetzen</li>
+              </ul>
+              <br />
+            </li>
+            <li>Achtsamkeit</li>
+            <li>
+              Immunsystem stärken <br />
+              Vitamin D & C, Polyphenole, Zink, Selen
+            </li>
+            <li>Plan machen, Szenarien im Kopf durchspielen</li>
+            <li>Panik & Stress vermeiden (Anfälligkeit für Infektionen)</li>
+          </ol>
         </p>
       </div>
       <br />
